@@ -1,0 +1,85 @@
+/* Importation de la police Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Style global */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  color: aqua;
+  background-color: dimgray;
+}
+
+.title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.sub-title{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* slide */
+
+.menu-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    size: 60px;
+    
+}
+
+.menu-btn div {
+    width: 40px;
+    height: 6px;
+    background-color: aqua;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: aqua;
+    padding-top: 20px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: left 0.3s;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: lightgreen;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+}
